@@ -12,11 +12,13 @@ export default function App() {
   const renderName = ({ item }) => {
     return <Text>{item.name}</Text>;
   };
+
   return (
-    <FlatList data={namesAsObjects} 
-  renderItem={renderName}
-  keyExtractor={(item) => item.name}
-  />; 
+    <FlatList 
+      data={namesAsObjects} 
+      renderItem={renderName}
+      keyExtractor={(item) => item.name}
+    />
 );
 }
 
